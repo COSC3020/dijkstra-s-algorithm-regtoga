@@ -53,13 +53,6 @@ const graph6 = [
     [0, 0, 0, 0, 1, 0, 0]
 ];
 
-console.log(dijkstra(graph1, 0), [0, 3, 4, 5, 6]);
-console.log(dijkstra(graph2, 1), [3, 0, 6, 4, 5]);
-console.log(dijkstra(graph3, 0), [0, 1, 3, 4, 6]);
-console.log(dijkstra(graph4, 0), [0, 2, Infinity, Infinity, Infinity]);
-console.log(dijkstra(graph5, 0), [0, 1, 7, 9 ,10]);
-console.log(dijkstra(graph6, 3), [Infinity, Infinity, Infinity, 0, 1, 1, 2]);
-
 function allTests() {
     const results = [
         dijkstra(graph1, 0).join(',') === [0, 3, 4, 5, 6].join(','),
