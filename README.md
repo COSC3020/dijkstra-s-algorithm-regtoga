@@ -23,3 +23,7 @@ inefficient.
 
 What is the big $\Theta$ complexity of your implementation? Add your
 answer, including your reasoning, to this markdown file.
+
+
+https://www.youtube.com/watch?v=EFg3u_E6eHU was useful in figuring out what the algorithm was.
+the priority que is coppied and pasted from the frist result on google.
