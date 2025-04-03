@@ -28,7 +28,7 @@ tests i made up and hand solved:
 ![tests.img](image.png)
 
 my implementation has 2 main nested forloops with a priority que at the top of all of those.
-The priority queue at worst will have to loop though all of the items inside to add to the queue but this will only ever happend a maximum of |v| times because every node in the graph is pushed to the queue only once so its a |v| ammount of work. on average though a priority queue has a runtime of log(|v|) because of the fact that we dequeue items from the queue all the time meaning that lots of the time there is less than |v| ammount of work to do.
+The priority queue at worst will have to loop though all of the items inside to add to the queue but this will only ever happend a maximum of |v| times because every node in the graph is pushed to the queue only once so its a |v| ammount of work. on average though a priority queue has a runtime of log(|v|) because of the fact that we may insert items anywhere inside of the queue meaning that lots of the time there is less than |v| ammount of work to do. 
 
 the outer forloop runs graph.length times and the inner for loop runs graph.length times aswell, so |v| * |v| times. only if there is an island in the graph is this not the case and if that happens the loops will be cut short so less than |v|^2.
 
